@@ -146,7 +146,6 @@ This project is licensed under the MIT License.
 ## 🙋‍♂️ Contributors
 
 * Ajeet K Singh
-* [Other contributor names]
 
 ---
 
