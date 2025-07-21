@@ -1,9 +1,15 @@
 import pytest
 import requests
+import time
 from config import config
 
 BASE_URL = config.BASE_URL + "/api/oauth2/token"
 HEADERS = {"Content-Type": "application/json"}
+
+# 👇 Fixture to add delay between test cases
+@pytest.fixture(autouse=True)
+def wait_between_tests():
+    time.sleep(5)  # wait 1 second before each test
 
 # ✅ Positive case
 def test_valid_credentials():
